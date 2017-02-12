@@ -1,0 +1,20 @@
+if __name__ == '__main__':
+    N = int(input())
+    anslist = []
+    for i in range(0,N):
+        a = input().split(' ')
+        i+=1
+        if a[0] == 'insert':
+            anslist.insert(int(a[1]),int(a[2]))
+        elif a[0] == 'print':
+            print (anslist)
+        elif a[0] == 'remove':
+            anslist.remove(int(a[1]))
+        elif a[0] == 'append':
+            anslist.append(int(a[1]))
+        elif a[0] == 'sort':
+            anslist.sort()
+        elif a[0] == 'pop':
+            anslist.pop()
+        elif a[0] == 'reverse':
+            anslist.reverse()
